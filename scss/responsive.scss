@@ -1,0 +1,709 @@
+/*------import------*/
+@import url(https://fonts.googleapis.com/css?family=Amita); //Logo
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,300); //Texto
+@import url(https://fonts.googleapis.com/css?family=Stalemate); //Citas
+/*------Variables------*/
+$gray-color: #707070;
+$size-divider-cita: 8rem; 
+$size-divider-text: 2rem;
+$size-portaText-h2: 7.4rem;
+$size-portaText-p: 1.7rem;
+/*------Mixins------*/
+/*------Extend/Inheritance------*/
+.font-logo {
+	font-family: Amita;
+	font-style: normal;
+	letter-spacing: normal;
+}
+
+.font-texto100 {
+    font-family: Roboto;
+    font-weight: 100;
+    font-style: normal;
+    letter-spacing: normal;
+}
+
+.font-texto300 {
+	font-family: Roboto;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+}
+
+.font-cita {
+	font-family: 'Stalemate';
+	font-style: normal;
+    letter-spacing: normal;
+}
+
+
+@media screen and (min-width: 1024px) {  // medida para tablets horizontales
+
+	.rss-contain{
+		//background-color: white;
+		//margin-left: -8%;
+		margin-left: 9.5%;
+		height: auto;
+	}
+}
+		
+/*------------------------------------Medida tablet horizontal------------------------------------*/
+
+@media screen and (max-width: 1024px) {  // medida para tablets horizontales
+
+	.rss-contain{
+		//background-color: white;
+		//margin-left: -8%;
+		margin-left: 9.5%;
+		height: auto;
+	}
+
+	.section4-conten{
+		//padding-top: 12%;
+		.section-titulo{
+			font-family: 'Stalemate';
+			font-style: normal;
+		    letter-spacing: normal;
+			font-size: 6rem;
+			text-align: center;
+		}
+
+		.section-parraf{
+			font-family: Roboto;
+		    font-weight: 300;
+		    font-style: normal;
+		    letter-spacing: normal;
+			font-size: 1.5rem;
+			text-align: center;
+		}
+	}
+
+	.section3-conten{
+		//padding-top: 12%;
+		.section-titulo{
+			font-family: 'Stalemate';
+			font-style: normal;
+		    letter-spacing: normal;
+			font-size: 6rem;
+			text-align: center;
+		}
+
+		.section-parraf{
+			font-family: Roboto;
+		    font-weight: 300;
+		    font-style: normal;
+		    letter-spacing: normal;
+			font-size: 1.5rem;
+			text-align: center;
+		}
+	}
+
+	.section-conten{
+		padding-top: 12%;
+		.section-titulo{
+			font-family: 'Stalemate';
+			font-style: normal;
+		    letter-spacing: normal;
+			font-size: 6rem;
+			text-align: center;
+		}
+
+		.section-parraf{
+			font-family: Roboto;
+		    font-weight: 300;
+		    font-style: normal;
+		    letter-spacing: normal;
+			font-size: 1.5rem;
+			text-align: center;
+		}
+	}
+
+	.divider{
+	height: auto;
+	//background: grey;
+	.cite{
+		padding-top: 5%;
+		padding-bottom: 0%;
+		font-family: 'Stalemate';
+		font-style: normal;
+	    letter-spacing: normal;
+		font-size: 7rem;
+		text-align: center;
+	//	background: red;
+	}
+
+	.text-divider{
+		padding-bottom: 5%;
+		font-family: Roboto;
+	    font-weight: 300;
+	    font-style: normal;
+	    letter-spacing: normal;
+		font-size: 1.8rem;
+		text-align: center;
+	//	background: green;
+	}
+}
+
+
+	/*------Slider------*/
+	
+	#slider{
+		margin-top: 76px;
+	}
+	
+	.slide{
+
+		h1{
+			font-size: 60px;
+		    color: #707070;
+		    line-height: normal;
+		    font-family: Amita;
+		    font-weight: 400;
+		    font-style: normal;
+		    letter-spacing: normal;
+			text-transform: capitalize;
+			margin-top: 15%;
+		}
+	
+		h2{
+			font-weight: 600;
+			font-size: 45px;
+		    color: #707070;
+		    line-height: 0.6;
+		    font-family: Roboto;
+			text-transform: capitalize;
+		    font-weight: 300;
+		    font-style: normal;
+		    letter-spacing: normal;
+			margin-top: -50px;
+		}
+	
+		p{
+			font-size: 20px;
+		    color: #707070;
+			text-transform: none;
+		    font-family: Roboto;
+		    font-weight: 100;
+		    font-style: normal;
+		}
+	}	
+	
+	.text-slider1{
+		margin-top: -3%;
+		text-align: center;
+	}
+	
+	.text-slider2{
+		margin-top: 16%;
+		text-align: center;
+	}
+	
+	.text-slider3{
+		margin-top: 25%;
+		text-align: center;
+	}
+
+} // End 1024
+
+/*------------------------------------Medida tablet vertical------------------------------------*/
+@media screen and (max-width: 768px) { // medidas para tablets vertical
+	
+	.rss-contain{
+		//background-color: white;
+		//margin-left: -8%;
+		margin-left: 0%;
+		height: auto;
+	}
+	
+	.rss-name{
+		margin-top: 1%;
+	}
+	.rss-mail{
+		margin-top: 1%;
+	}
+	.rss-send{
+		margin-top: 1%;
+	}
+
+	.section4-conten{
+		//padding-top: 12%;
+		.section-titulo{
+			font-family: 'Stalemate';
+			font-style: normal;
+		    letter-spacing: normal;
+			font-size: 4rem;
+			text-align: center;
+		}
+
+		.section-parraf{
+			font-family: Roboto;
+		    font-weight: 300;
+		    font-style: normal;
+		    letter-spacing: normal;
+			font-size: 1.2rem;
+			text-align: center;
+		}
+	}
+
+	.section3-conten{
+		//padding-top: 12%;
+		.section-titulo{
+			font-family: 'Stalemate';
+			font-style: normal;
+		    letter-spacing: normal;
+			font-size: 4rem;
+			text-align: center;
+		}
+
+		.section-parraf{
+			font-family: Roboto;
+		    font-weight: 300;
+		    font-style: normal;
+		    letter-spacing: normal;
+			font-size: 1.2rem;
+			text-align: center;
+		}
+	}
+
+	.section-conten{
+		padding-top: 12%;
+		.section-titulo{
+			font-family: 'Stalemate';
+			font-style: normal;
+		    letter-spacing: normal;
+			font-size: 4rem;
+			text-align: center;
+		}
+
+		.section-parraf{
+			font-family: Roboto;
+		    font-weight: 300;
+		    font-style: normal;
+		    letter-spacing: normal;
+			font-size: 1.2rem;
+			text-align: center;
+		}
+	}
+	
+	.titulo-portafolio{
+		font-family: Roboto;
+	    font-weight: 300;
+	    font-style: normal;
+	    letter-spacing: normal;
+		margin-top: 5%;
+		font-size: 2.5rem;
+		text-align: center;
+	}
+
+	.text-portafolio{
+		font-family: Roboto;
+	    font-weight: 300;
+	    font-style: normal;
+	    letter-spacing: normal;
+		margin-top: 3%;
+		font-size: 1.5rem;
+		text-align: center;
+		margin-bottom: 5%;
+	}
+
+	.demostraciones{
+		display: none;
+	}
+	.no-768{
+		display: none;
+	}
+
+	.divider{
+	height: auto;
+	//background: grey;
+	.cite{
+		padding-top: 5%;
+		padding-bottom: 0%;
+		font-family: 'Stalemate';
+		font-style: normal;
+	    letter-spacing: normal;
+		font-size: 6rem;
+		text-align: center;
+	//	background: red;
+	}
+
+	.text-divider{
+		padding-bottom: 5%;
+		font-family: Roboto;
+	    font-weight: 300;
+	    font-style: normal;
+	    letter-spacing: normal;
+		font-size: 1.6rem;
+		text-align: center;
+	//	background: green;
+	}
+}
+	
+	
+	.marca{
+		font-family: 'Amita';
+		font-size: 2.4rem;
+		margin-left: -20px;
+	}
+
+	.navbar {
+		border: none;
+
+	}
+
+	/*------Nav------*/
+	
+	#nav{
+		width: 100%;
+		background-color: white;
+		position: fixed;
+		z-index: 99;
+		top: 0;
+		padding-top: 20px;
+		padding-bottom: 10px;
+		transition: all .5s cubic-bezier(0,0,0.09,0.87);
+
+	}
+	
+	/*------Slider------*/
+	
+	#slider{
+		margin-top: 76px;
+	}
+	
+	.slide{
+
+		h1{
+			font-size: 38px;
+		    color: #707070;
+		    line-height: normal;
+		    font-family: Amita;
+		    font-weight: 400;
+		    font-style: normal;
+		    letter-spacing: normal;
+			text-transform: capitalize;
+			margin-top: 15%;
+		}
+		
+		h2{
+			font-weight: 600;
+			font-size: 32px;
+		    color: #707070;
+		    line-height: 0.6;
+		    font-family: Roboto;
+			text-transform: capitalize;
+		    font-weight: 300;
+		    font-style: normal;
+		    letter-spacing: normal;
+			margin-top: -30px;
+		}
+		
+		p{
+			font-size: 15px;
+		    color: #707070;
+			text-transform: none;
+		    font-family: Roboto;
+		    font-weight: 100;
+		    font-style: normal;
+		}
+	}	
+	
+	.text-slider1{
+		margin-top: -3%;
+		text-align: center;
+	}
+	
+	.text-slider2{
+		margin-top: 16%;
+		text-align: center;
+	}
+	
+	.text-slider3{
+		margin-top: 25%;
+		text-align: center;
+	}
+
+	
+}//End 768
+
+/*------------------------------------Medida telefono------------------------------------*/
+@media screen and (max-width: 480px) {
+	
+	.rss-contain{
+		//background-color: white;
+		//margin-left: -8%;
+		margin-left: 0%;
+		height: auto;
+	}
+
+	.section4-conten{
+		//padding-top: 12%;
+		.section-titulo{
+			font-family: 'Stalemate';
+			font-style: normal;
+		    letter-spacing: normal;
+			font-size: 5rem;
+			text-align: center;
+		}
+
+		.section-parraf{
+			font-family: Roboto;
+		    font-weight: 300;
+		    font-style: normal;
+		    letter-spacing: normal;
+			font-size: 1.3rem;
+			text-align: center;
+		}
+	}
+
+	.section3-conten{
+		//padding-top: 12%;
+		.section-titulo{
+			font-family: 'Stalemate';
+			font-style: normal;
+		    letter-spacing: normal;
+			font-size: 5rem;
+			text-align: center;
+		}
+
+		.section-parraf{
+			font-family: Roboto;
+		    font-weight: 300;
+		    font-style: normal;
+		    letter-spacing: normal;
+			font-size: 1.3rem;
+			text-align: center;
+		}
+	}
+	.section-conten{
+		padding-top: 12%;
+		.section-titulo{
+			font-family: 'Stalemate';
+			font-style: normal;
+		    letter-spacing: normal;
+			font-size: 5rem;
+			text-align: center;
+		}
+
+		.section-parraf{
+			font-family: Roboto;
+		    font-weight: 300;
+		    font-style: normal;
+		    letter-spacing: normal;
+			font-size: 1.3rem;
+			text-align: center;
+		}
+	}
+
+	.titulo-portafolio{
+		font-family: Roboto;
+	    font-weight: 300;
+	    font-style: normal;
+	    letter-spacing: normal;
+		margin-top: 5%;
+		font-size: 2.3rem;
+		text-align: center;
+	}
+
+	.text-portafolio{
+		font-family: Roboto;
+	    font-weight: 300;
+	    font-style: normal;
+	    letter-spacing: normal;
+		margin-top: 3%;
+		font-size: 1.3rem;
+		text-align: center;
+		margin-bottom: 5%;
+	}
+
+
+.divider{
+	height: auto;
+	//background: grey;
+	.cite{
+		padding-top: 5%;
+		padding-bottom: 0%;
+		font-family: 'Stalemate';
+		font-style: normal;
+	    letter-spacing: normal;
+		font-size: 6rem;
+		text-align: center;
+	//	background: red;
+	}
+
+	.text-divider{
+		padding-bottom: 5%;
+		font-family: Roboto;
+	    font-weight: 300;
+	    font-style: normal;
+	    letter-spacing: normal;
+		font-size: 1.6rem;
+		text-align: center;
+	//	background: green;
+	}
+}
+	
+	
+	.navbar {
+		border: none;
+	}
+	
+	/*------Slider------*/
+	
+	#slider{
+		margin-top: 76px;
+	}
+	
+	.slide{
+
+		h1{
+			font-size: 40px;
+		    color: #707070;
+		    line-height: normal;
+		    font-family: Amita;
+		    font-weight: 400;
+		    font-style: normal;
+		    letter-spacing: normal;
+			text-transform: capitalize;
+			margin-top: 20%;
+		}
+		
+		h2{
+			font-weight: 600;
+			font-size: 26px;
+		    color: #707070;
+		    line-height: 0.6;
+		    font-family: Roboto;
+			text-transform: capitalize;
+		    font-weight: 300;
+		    font-style: normal;
+		    letter-spacing: normal;
+			margin-top: -35px;
+		}
+		
+		p{
+			font-size: 13px;
+		    color: #707070;
+			text-transform: none;
+		    font-family: Roboto;
+		    font-weight: 100;
+		    font-style: normal;
+		}
+	}	
+	
+	.text-slider1{
+		margin-top: -3%;
+		text-align: center;
+	}
+	
+	.text-slider2{
+		margin-top: 20%;
+		text-align: center;
+	}
+	
+	.text-slider3{
+		margin-top: 40%;
+		text-align: center;
+	}
+
+} // End 480
+
+/*------------------------------------Small Medida telefono------------------------------------*/
+@media screen and (max-width: 320px) {
+	
+	.rss-contain{
+		//background-color: white;
+		//margin-left: -8%;
+		margin-left: 0%;
+		height: auto;
+	}
+
+	.titulo-portafolio{
+		font-family: Roboto;
+	    font-weight: 300;
+	    font-style: normal;
+	    letter-spacing: normal;
+		margin-top: 5%;
+		font-size: 2.1rem;
+		text-align: center;
+	}
+
+	.text-portafolio{
+		font-family: Roboto;
+	    font-weight: 300;
+	    font-style: normal;
+	    letter-spacing: normal;
+		margin-top: 3%;
+		font-size: 1.3rem;
+		text-align: center;
+		margin-bottom: 5%;
+	}
+
+.divider{
+	height: auto;
+	//background: grey;
+	.cite{
+		padding-top: 5%;
+		padding-bottom: 0%;
+		font-family: 'Stalemate';
+		font-style: normal;
+	    letter-spacing: normal;
+		font-size: 4rem;
+		text-align: center;
+	//	background: red;
+	}
+
+	.text-divider{
+		padding-bottom: 5%;
+		font-family: Roboto;
+	    font-weight: 300;
+	    font-style: normal;
+	    letter-spacing: normal;
+		font-size: 1.3rem;
+		text-align: center;
+	//	background: green;
+	}
+}
+	
+
+	.no-phone{
+		display: none;
+	}
+	
+	.slide{
+
+		h1{
+			font-size: 40px;
+		    color: #707070;
+		    line-height: normal;
+		    font-family: Amita;
+		    font-weight: 400;
+		    font-style: normal;
+		    letter-spacing: normal;
+			text-transform: capitalize;
+			margin-top: 20%;
+		}
+		
+		h2{
+			font-weight: 600;
+			font-size: 16px;
+		    color: #707070;
+		    line-height: 0.6;
+		    font-family: Roboto;
+			text-transform: capitalize;
+		    font-weight: 300;
+		    font-style: normal;
+		    letter-spacing: normal;
+			margin-top: -35px;
+		}
+		
+		p{
+			font-size: 13px;
+		    color: #707070;
+			text-transform: none;
+		    font-family: Roboto;
+		    font-weight: 100;
+		    font-style: normal;
+		}
+	}	
+}

@@ -1,0 +1,26 @@
+@media only screen and (min-width: 768px) {
+	#nav{
+		width: 100%;
+		background-color: transparent;
+		position: fixed;
+		z-index: 99;
+		top: 0;
+		padding-top: 20px;
+		padding-bottom: 10px;
+		border-radius: 0px;
+		border: none;
+		transition: all .5s cubic-bezier(0,0,0.09,0.87);
+	}
+}
+
+.dropdown-menu{
+	min-width: 114px;
+}
+
+.navbar-nav>li>.dropdown-menu {
+	margin-top: 10px
+}
+
+.navbar {
+		border: none;
+}

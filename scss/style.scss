@@ -1,0 +1,405 @@
+/*
+Theme Name: Corvata
+Theme URI: corvata.co
+Description: Corvata web solutions
+Version: 1.0
+Author: Edwin Anaya H.
+Author URI: edwinanaya.co
+*/
+
+/*------import------*/
+@import url(https://fonts.googleapis.com/css?family=Amita); //Logo
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,300); //Texto
+@import url(https://fonts.googleapis.com/css?family=Stalemate); //Citas
+@import 'nav';
+@import 'slider';
+/*------Variables------*/
+$gray-color: #707070;
+$size-divider-cita: 8rem; 
+$size-divider-text: 2rem;
+$size-portaText-h2: 7.4rem;
+$size-portaText-p: 1.7rem;
+/*------Mixins------*/
+/*------Extend/Inheritance------*/
+.font-logo {
+	font-family: Amita;
+	font-style: normal;
+	letter-spacing: normal;
+}
+.font-texto100 {
+    font-family: Roboto;
+    font-weight: 100;
+    font-style: normal;
+    letter-spacing: normal;
+}
+.font-texto300 {
+	font-family: Roboto;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+}
+.font-cita {
+	font-family: 'Stalemate';
+	font-style: normal;
+    letter-spacing: normal;
+}
+
+/*------------------------------------stilos------------------------------------*/
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	@extend .font-texto300;
+	font-size: 12pt;
+}
+
+.logo{
+	margin-top: -15px;
+	height: 45px;
+}
+
+.conPreview{
+		display: none;
+}
+.conButtonSlide{
+	cursor: pointer;
+}
+
+.marca{
+	font-family: 'Amita';
+	font-size: 3rem;
+}
+/*------------------------------------#top------------------------------------*/
+@media only screen and (min-width: 768px) {
+    #top{
+		font-size: 70px;
+		font-style: light;
+		cursor: pointer;
+		position: fixed;
+		top: 88%;
+		right: 1.5%;
+		z-index: 999;
+		opacity: 0;
+		visibility: hidden;
+		transition: all .5s cubic-bezier(0,0,0.09,0.87);
+	}
+
+	#top:hover{
+		opacity: 0.8;
+	}
+}
+@media only screen and (max-width: 768px) {
+	#top{
+		display: none;
+	}
+}
+/*------Divider------*/
+.divider{
+	height: auto;
+	border-top: 1px #f3f3f3 solid;
+	border-bottom: 1px #f3f3f3 solid;
+	//background: grey;
+	.cite{
+		padding-top: 5%;
+		padding-bottom: 0%;
+		@extend .font-cita;
+		font-size: $size-divider-cita;
+		text-align: center;
+		//background: red;
+	}
+
+	.text-divider{
+		padding-bottom: 5%;
+		@extend .font-texto300;
+		font-size: $size-divider-text;
+		text-align: center;
+		//background: green;
+	}
+}
+/*------Demostraciones------*/
+.demostraciones{
+	height: auto;
+	background: #fafafa;
+	padding-bottom: 100px;
+
+	.con-demostraciones{
+		height: auto;
+		.dem{
+			padding: 0px;
+			img{
+				max-width:100%;
+				max-height: 100%;
+			}
+		}
+	}
+}
+
+.over{
+	position: absolute;
+	z-index: 1;
+	height: 100%;
+	width: 100%;
+	background-color: black;
+	opacity: 0.3;
+	cursor: pointer;
+}
+
+.titulo-demostraciones{
+	@extend .font-texto300;
+	margin-top: 5%;
+	font-size: 2.5rem;
+	text-align: center;
+}
+
+.text-demostraciones{
+	@extend .font-texto300;
+	margin-top: 3%;
+	font-size: 1.7rem;
+	text-align: center;
+	margin-bottom: 5%;
+}
+
+.title-dem{
+	position: absolute;
+	text-align: center;
+	@extend .font-texto300;
+	margin-top: 60%;
+	font-size: 1.6rem;
+	color: white;
+	background: black;
+	padding: 2%;
+	opacity: 0.8;
+}
+/*------Portafolio------*/
+.portafolio{
+	height: auto;
+	background: #fafafa;
+}
+
+.titulo-portafolio{
+	@extend .font-texto300;
+	margin-top: 5%;
+	font-size: 2.5rem;
+	text-align: center;
+}
+
+.text-portafolio{
+	@extend .font-texto300;
+	margin-top: 3%;
+	font-size: 1.7rem;
+	text-align: center;
+	margin-bottom: 5%;
+}
+
+//section's----
+.section{
+	border-top: 1px #f3f3f3 solid;
+	background: white;
+	height: auto;
+	padding-bottom: 5%;
+}
+
+.section-image{
+	background-image: url("img/portafolio/web.jpg");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	//background: red;
+	padding-top: 38%;
+	max-height: 515px;
+}
+
+.section-imag{
+	//background-image: url("img/portafolio/web.jpg");
+	// background-size: 100% 100%;
+	// background-repeat: no-repeat;
+	background: red;
+	//padding-top: 38%;
+	height: 280px;
+	max-height: 515px;
+}
+
+.section-conten{
+	padding-top: 12%;
+	.section-titulo{
+		@extend .font-cita;
+		font-size: 7rem;
+		text-align: center;
+	}
+
+	.section-parraf{
+		@extend .font-texto300;
+		font-size: 1.6rem;
+		text-align: center;
+	}
+}
+
+.section3-conten{
+	padding-top: 3%;
+	padding-bottom: 3%;
+	//border-top: 1px #f3f3f3 solid;
+	.section-titulo{
+		@extend .font-cita;
+		font-size: 7rem;
+		text-align: center;
+	}
+
+	.section-parraf{
+		padding-left: 5%;
+		padding-right: 5%;
+		@extend .font-texto300;
+		font-size: 1.6rem;
+		text-align: center;
+	}
+}
+.section3-imag{
+	background-image: url("img/portafolio/facebookads.png");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	//background: red;
+	border-right: solid 8px transparent;
+	border-left: solid 8px transparent;
+	padding-top: 12%;
+	max-height: 150px;
+}
+/* dividerY*/
+.section4{	
+	height: auto;
+	border-top: 1px #f3f3f3 solid;
+	border-bottom: 1px #f3f3f3 solid;
+	//background-image: url("img/portafolio/fondo.jpg");
+	//background-repeat: repeat-x;
+	padding-top: 3%;
+	padding-bottom: 3%;
+	background: white;
+
+	.section4-youtube{
+		background-image: url("img/portafolio/youtubeads.png");
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		//background: red;
+		padding-top: 30%;
+		max-height: 350px;
+	}
+}
+.section4-conten{
+	padding-top: 10%;
+	//border-top: 1px #f3f3f3 solid;
+	.section-titulo{
+		@extend .font-cita;
+		font-size: 7rem;
+		text-align: center;
+	}
+
+	.section-parraf{
+		padding-left: 5%;
+		padding-right: 5%;
+		@extend .font-texto300;
+		font-size: 1.6rem;
+		text-align: center;
+	}
+}
+
+/*------Divider------*/
+.divider-rss{
+	height: auto;
+	
+	background-image: url("img/divider3.jpg");
+	//background-size: 100% 100%;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	padding-bottom: 10%;
+	padding-top: 10%;
+	
+	.rss-contain{
+		//background-color: white;
+		//margin-left: -8%;
+		height: auto;
+	}
+	.rss{
+		//margin-left: 0.3%;
+		height: 40px
+	}
+	.rss-name{
+		//background-color: red;
+	}
+	.rss-mail{
+		//background-color: white;
+	}
+	.rss-send{
+		//background-color: blue;
+	}
+	#name{
+		width: 100%;
+	    height: 40px;
+	    background-color: black;
+	    border-radius: 4px !important;
+	    opacity: 0.5;
+	    color: white;
+	    border: none;
+	    color: white;
+	    padding-left: 15px;
+	    outline: none;
+	    min-width:180px;
+	}
+
+	#mail{
+		width: 100%;
+	    height: 40px;
+	    background-color: black;
+	    border-radius: 4px !important;
+	    opacity: 0.5;
+	    color: white;
+	    border: none;
+	    color: white;
+	    padding-left: 15px;
+	    outline: none;
+	    min-width: 180px;
+	}
+
+	#send{
+	    outline: none;
+	    height: 38px;
+	    width: 11%;
+	    border-radius: 4px !important;
+	    background-color: #c11524; //red
+	    border: none;
+	    color: white;
+	    min-width: 70px;
+	    cursor:pointer;
+	    &:hover{
+	    	background-color: #c11624;
+	    }
+	}
+}
+
+.divider-rss{
+		.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+    	position: relative;
+    	min-height: 1px;
+    	padding-right: 0px;
+    	padding-left: 5px;
+	}
+}
+
+.pie{
+	width: 100%;
+	@extend .font-texto300;
+	color: white;
+	font-size: 1.4rem;
+	background-color: #2C2D32;
+	opacity: 2;
+	.copyr{
+		padding-top: 2%;
+		padding-bottom: 2%;
+	}
+	.idioma{
+		padding-top: 2%;
+		padding-bottom: 2%;
+		a{
+			color: white;
+		}
+	}
+}

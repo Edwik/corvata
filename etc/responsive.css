@@ -1,0 +1,63 @@
+/*------Medida tablet horizontal------*/
+/*------Medida tablet vertical------*/
+@media screen and (max-width: 768px) {
+  /*---Nav---*/
+  #nav {
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    transition: all 0.5s cubic-bezier(0, 0, 0.09, 0.87); }
+
+  /*Slider*/
+  #slider {
+    margin-top: 76px; }
+
+  h1 {
+    font-size: 32px;
+    color: #707070;
+    line-height: normal;
+    font-family: Amita;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    text-transform: capitalize;
+    margin-top: 20%; }
+
+  h2 {
+    font-weight: 600;
+    font-size: 32px;
+    color: #707070;
+    line-height: 0.6;
+    font-family: Roboto;
+    text-transform: capitalize;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+    margin-top: -10px; }
+
+  p {
+    font-size: 14px;
+    color: #707070;
+    text-transform: none;
+    font-family: Roboto;
+    font-weight: 100;
+    font-style: normal; }
+
+  .text-slider1 {
+    margin-top: -3%;
+    text-align: center; }
+
+  .text-slider2 {
+    margin-top: 16%;
+    text-align: center; }
+
+  .text-slider3 {
+    margin-top: 25%;
+    text-align: center; } }
+/*------Medida telefono------*/
+
+/*# sourceMappingURL=responsive.css.map */

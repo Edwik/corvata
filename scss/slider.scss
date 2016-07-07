@@ -1,0 +1,223 @@
+/*------import------*/
+@import url(https://fonts.googleapis.com/css?family=Amita); //Logo
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,300); //Texto
+@import url(https://fonts.googleapis.com/css?family=Stalemate); //Citas
+/*------Variables------*/
+$gray-color: #707070;
+$size-divider-cita: 8rem; 
+$size-divider-text: 2rem;
+$size-portaText-h2: 7.4rem;
+$size-portaText-p: 1.7rem;
+/*------Mixins------*/
+/*------Extend/Inheritance------*/
+.font-logo {
+	font-family: Amita;
+	font-style: normal;
+	letter-spacing: normal;
+}
+.font-texto100 {
+    font-family: Roboto;
+    font-weight: 100;
+    font-style: normal;
+    letter-spacing: normal;
+}
+.font-texto300 {
+	font-family: Roboto;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+}
+.font-cita {
+	font-family: 'Stalemate';
+	font-style: normal;
+    letter-spacing: normal;
+}
+#slider{
+	width: 100%;
+	overflow: hidden;
+	-webkit-perspective: 2000px; /* Chrome, Safari, Opera  */
+    perspective: 2000px;
+}
+
+.slide{
+	width: 100%;
+	overflow: hidden;
+	background-size: cover;
+	z-index: 0;
+	opacity: 0;
+	position: absolute;
+
+	img{
+		width: 100%;
+		height: auto;
+	}
+
+	h1{
+		@extend .font-logo;
+		font-size: 5rem;
+	    color: $gray-color;
+		text-transform: capitalize;
+		margin-top: 20%;
+	}
+
+	h2{
+		@extend .font-texto300;
+		font-size: 5rem;
+	    color: $gray-color;
+	    line-height: 0.6;
+		text-transform: capitalize;
+		margin-top: -10px;
+	}
+
+	p{
+		@extend .font-texto100;
+		font-size: 2rem;
+	    color: $gray-color;
+		text-transform: none;
+	}
+}
+
+.slide:nth-child(1){
+	background-image: url(img/slider/slide1.png);
+	opacity: 1;
+}
+
+.slide:nth-child(2){
+	background-image: url(img/slider/slide2.png);
+}
+
+.slide:nth-child(3){
+	background-image: url(img/slider/slide3.png);
+}
+
+#fondo > div:last-child{
+	margin-left: calc(51% - 180px);
+	margin-top: 60px;
+}
+
+.conButtonSlide{
+	position: absolute;
+	width: 170px;
+	height: 30px;
+	top: 36%;
+	z-index: 50;
+}
+
+#buttonSlideLeft{
+	left: 0;
+
+	.flecha{
+		width: 24px;
+		padding-left: 8px;
+	}
+	
+	.conPreview{
+		left: -180px;
+	}
+	
+	.imgPreview{
+		width: 180px;
+		height: 110px;
+		background-image: url(img/slider/slide1.png);
+		background-size: 300px auto;
+		transition: all .5s cubic-bezier(0,0,0.09,0.87);
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.text-slider1{
+		margin-top: 3%;
+		text-align: center;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.text-slider2{
+		margin-top: 25%;
+		text-align: center;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.text-slider3{
+		margin-top: 25%;
+		text-align: center;
+	}
+}
+
+#buttonSlideRight{
+	right: -148px;
+
+	.flecha{
+		width: 24px;
+		padding-left: 8px;
+	}
+
+	.conPreview{
+		right: -180px;
+	}
+
+	.imgPreview{
+		width: 180px;
+		height: 110px;
+		background-image: url(img/slider/slide2.png);
+		background-size: 300px auto;
+		transition: all .5s cubic-bezier(0,0,0.09,0.87);
+	}
+
+}
+#slider:hover .flecha{
+	visibility: visible;
+	opacity: 0.7;
+}
+
+.flecha{
+	width: 30px;
+	height: 110px;
+	padding-top: 30px;
+	background-color: #3B3B3B;
+	color: #FFFFFF;
+	opacity: 0;
+	font-size: 3rem;
+	display: inline-block;
+	visibility: hidden;
+	transition: all .5s cubic-bezier(0,0,0.09,0.87);
+}
+
+#buttonSlideLeft .flecha:hover + .conPreview, #buttonSlideLeft .conPreview:hover{
+	left: 0;
+}
+
+#buttonSlideRight .flecha:hover + .conPreview, #buttonSlideRight .conPreview:hover{
+	right: 145px;
+}
+
+.conPreview{
+	cursor: pointer;
+	position: absolute;
+	top: 0;
+	transition: all .5s cubic-bezier(0,0,0.09,0.87);
+}
+
+.tituloPreview{
+	background-color: #3D3D3D;
+	color: #D1CDCD;
+	font-family: Arial;
+	text-transform: capitalize;
+	font-weight: 600;
+	font-size: 1.1rem;
+	padding-left: 10px;
+	padding-right: 10px;
+	width: 180px;
+	height: 30px;
+	line-height: 30px;
+	transform: rotateX(-90deg);
+    transform-origin: 50% 0;
+	transition: all .5s cubic-bezier(0,0,0.09,0.87);
+}
+
+.conPreview:hover .tituloPreview{
+	transform: rotateX(0deg) !important;
+	transition: all .5s cubic-bezier(0,0,0.09,0.87);
+	transition-delay: 0.2s;
+}
