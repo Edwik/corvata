@@ -80,7 +80,7 @@ $(document).ready(function() {
     /*For hover text portafolio*/
 
     p = '<div class="section-titulo col-xs-12 col-sm-12 col-md-12 col-lg-12">Youtube Live</div>';
-    g = '<div class="section-parraf col-xs-12 col-sm-12 col-md-12 col-lg-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam qui dolores aliquid esse iusto laboriosam enim mollitia.</div>'
+    g = '<div class="section-parraf col-xs-12 col-sm-12 col-md-12 col-lg-12">Transmisiones en vivo y grabaciones de alta calidad para tu concierto, evento, iglesia y fiesta</div>'
     tes= '<div id="i3" class="section-conten col-xs-5 col-sm-5 col-md-5 col-lg-5">'+p+g+'</div>'
 
     //-----------------------
